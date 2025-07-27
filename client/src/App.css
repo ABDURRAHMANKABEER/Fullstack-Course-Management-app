@@ -1,42 +1,111 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+.navbar-nav .nav-link {
+    transition: color 0.3s ease;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.navbar-nav .nav-link:hover {
+    color: #0d6efd !important; /* Bootstrap primary color */
+    text-decoration: underline;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.hero {
+    height: 90vh;
+    background: linear-gradient(to right, #2c3e50, #34495e);
+    color: white;
+    padding: 2rem;
+}
+.about h2 {
+    color: #2c3e50;
+}
+.about .info-box {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease;
+}
+.about .info-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+.footer {
+    background-color: #2c3e50;
+    color: #ffffff;
+    padding: 1.5rem 0;
+    text-align: center;
+    font-size: 0.95rem;
+    letter-spacing: 0.5px;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    z-index: 1;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease-in-out;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.footer p {
+    margin: 0;
+    opacity: 0.9;
+    font-weight: 500;
+}
+
+.courses-page {
+    background-color: #f8f9fa; /* Light gray background */
+    min-height: 100vh;
+}
+
+.courses-page h2 {
+    color: #2c3e50;
+    margin-bottom: 2rem;
+}
+.course-card {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    border-radius: 12px;
+}
+
+.course-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 0 18px rgba(0, 0, 0, 0.1);
+}
+
+.course-card .duration {
+    font-size: 0.95rem;
+}
+
+/* AddCourses */
+
+.course-card {
+    background: #f8f9fa;
+    border-radius: 1.5rem;
+    padding: 2rem;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease-in-out;
+}
+
+.course-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.12);
+}
+
+.course-heading {
+    font-size: 1.8rem;
+    color: #0d6efd;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+input::placeholder,
+textarea::placeholder {
+    font-style: italic;
+    color: #999;
 }
 
 .card {
-  padding: 2em;
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
 }
 
-.read-the-docs {
-  color: #888;
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
